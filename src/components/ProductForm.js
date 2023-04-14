@@ -12,7 +12,7 @@ const ProductForm = () => {
     event.preventDefault();
 
     try {
-      await axios.post("/api/products", {
+      await axios.post("mongodb-next-two.vercel.app/api/products", {
         name,
         description,
         price: Number(price),
